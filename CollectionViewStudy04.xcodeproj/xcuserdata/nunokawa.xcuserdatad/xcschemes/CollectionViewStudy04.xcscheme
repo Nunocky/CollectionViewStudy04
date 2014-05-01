@@ -48,6 +48,16 @@
                ReferencedContainer = "container:CollectionViewStudy04.xcodeproj">
             </BuildableReference>
          </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "9950A8C71911D3F200770E0F"
+               BuildableName = "CollectionViewStudy04-3Tests.xctest"
+               BlueprintName = "CollectionViewStudy04-3Tests"
+               ReferencedContainer = "container:CollectionViewStudy04.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
