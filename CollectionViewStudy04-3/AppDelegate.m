@@ -10,8 +10,6 @@
 #import "PersonModel.h"
 #import "PersonModelViewItem.h"
 
-@implementation AppDelegate
-
 @interface AppDelegate()
 {
     NSArrayController *_arrayController;
