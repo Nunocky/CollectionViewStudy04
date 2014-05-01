@@ -18,6 +18,7 @@
 		9950A8601911CE7300770E0F /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9950A83F1911CE7300770E0F /* Cocoa.framework */; };
 		9950A8681911CE7300770E0F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9950A8661911CE7300770E0F /* InfoPlist.strings */; };
 		9950A86A1911CE7300770E0F /* CollectionViewStudy04Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9950A8691911CE7300770E0F /* CollectionViewStudy04Tests.m */; };
+		9950A8751911CE9700770E0F /* PersonModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9950A8741911CE9700770E0F /* PersonModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +51,8 @@
 		9950A8651911CE7300770E0F /* CollectionViewStudy04Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CollectionViewStudy04Tests-Info.plist"; sourceTree = "<group>"; };
 		9950A8671911CE7300770E0F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		9950A8691911CE7300770E0F /* CollectionViewStudy04Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CollectionViewStudy04Tests.m; sourceTree = "<group>"; };
+		9950A8731911CE9700770E0F /* PersonModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonModel.h; sourceTree = "<group>"; };
+		9950A8741911CE9700770E0F /* PersonModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +123,8 @@
 				9950A8541911CE7300770E0F /* MainMenu.xib */,
 				9950A8571911CE7300770E0F /* Images.xcassets */,
 				9950A8461911CE7300770E0F /* Supporting Files */,
+				9950A8731911CE9700770E0F /* PersonModel.h */,
+				9950A8741911CE9700770E0F /* PersonModel.m */,
 			);
 			path = CollectionViewStudy04;
 			sourceTree = "<group>";
@@ -252,6 +257,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9950A8751911CE9700770E0F /* PersonModel.m in Sources */,
 				9950A8531911CE7300770E0F /* AppDelegate.m in Sources */,
 				9950A84C1911CE7300770E0F /* main.m in Sources */,
 			);

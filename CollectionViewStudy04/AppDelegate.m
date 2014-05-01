@@ -7,12 +7,52 @@
 //
 
 #import "AppDelegate.h"
+#import "PersonModel.h"
 
 @implementation AppDelegate
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
-    // Insert code here to initialize your application
+    [self setDefaultData];
 }
 
+-(void)setDefaultData
+{
+    PersonModel *obj;
+    NSMutableArray *tmpArray = [NSMutableArray array];
+    
+    obj = [PersonModel new];
+    obj.name = @"はなこ";
+    obj.title = @"社長";
+    [tmpArray addObject:obj];
+    
+    obj = [PersonModel new];
+    obj.name = @"たま";
+    obj.title = @"ねこ";
+    [tmpArray addObject:obj];
+    
+    for (int i=0; i<20; i++) {
+        obj = [PersonModel new];
+        obj.name = [NSString stringWithFormat:@"人%d", i];
+        obj.title = @"従業員";
+        [tmpArray addObject:obj];
+    }
+    
+    [self setPersonArray:tmpArray];
+}
+
+-(void)insertObject:(PersonModel *)object inPersonArrayAtIndex:(NSUInteger)index
+{
+    [_personArray insertObject:object atIndex:index];
+}
+
+-(void)removeObjectFromPersonArrayAtIndex:(NSUInteger)index
+{
+    [_personArray removeObjectAtIndex:index];
+}
+
+-(void)setPersonArray:(NSMutableArray *)personArray
+{
+    _personArray = personArray;
+}
 @end

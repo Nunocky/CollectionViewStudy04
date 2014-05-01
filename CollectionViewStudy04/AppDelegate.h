@@ -12,4 +12,5 @@
 
 @property (assign) IBOutlet NSWindow *window;
 
+@property (nonatomic) NSMutableArray *personArray;
 @end
