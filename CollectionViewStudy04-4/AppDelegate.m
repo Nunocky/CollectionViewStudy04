@@ -71,9 +71,8 @@
         obj.title = @"従業員";
         [tmpArray addObject:obj];
     }
-    
-    [self setPersonArray:tmpArray];
 
+    [self setPersonArray:tmpArray];
 }
 
 -(void)insertObject:(PersonModel *)object inPersonArrayAtIndex:(NSUInteger)index
