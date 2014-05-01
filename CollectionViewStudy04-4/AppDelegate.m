@@ -61,7 +61,7 @@
     [tmpArray addObject:obj];
     
     obj = [PersonModel new];
-    obj.name = @"たま";
+    obj.name = @"利休之助";
     obj.title = @"ねこ";
     [tmpArray addObject:obj];
     

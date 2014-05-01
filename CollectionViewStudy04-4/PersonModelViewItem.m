@@ -18,12 +18,19 @@
 {
     self = [super initWithNibName:@"PersonModelViewItem" bundle:nil];
     if (self) {
+        // TODO: viewのselected切り替えもbindできるとすっきりするのだが
+//        [self.view bind:@"selected"
+//               toObject:self
+//            withKeyPath:@"selected"
+//                options:nil];
     }
     return self;
 }
 
 -(void)setSelected:(BOOL)selected
 {
+    [super setSelected:selected];
+
     [super setSelected:selected];
     [self.view performSelector:@selector(setSelected:) withObject:@(selected)];
 }
