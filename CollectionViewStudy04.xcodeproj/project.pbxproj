@@ -80,6 +80,7 @@
 		9950A8DE1911D47400770E0F /* PersonModelViewItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonModelViewItem.h; sourceTree = "<group>"; };
 		9950A8DF1911D47400770E0F /* PersonModelViewItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonModelViewItem.m; sourceTree = "<group>"; };
 		9950A8E01911D47400770E0F /* PersonModelViewItem.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PersonModelViewItem.xib; sourceTree = "<group>"; };
+		9950A8E31911E16F00770E0F /* CollectionViewStudyMemo.graffle */ = {isa = PBXFileReference; lastKnownFileType = file; path = CollectionViewStudyMemo.graffle; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +114,7 @@
 		9950A8331911CE7300770E0F = {
 			isa = PBXGroup;
 			children = (
+				9950A8E31911E16F00770E0F /* CollectionViewStudyMemo.graffle */,
 				9950A8451911CE7300770E0F /* CollectionViewStudy04 */,
 				9950A87C1911D16D00770E0F /* CollectionViewStudy04-2 */,
 				9950A8B01911D3F200770E0F /* CollectionViewStudy04-3 */,
