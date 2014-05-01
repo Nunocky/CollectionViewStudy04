@@ -24,13 +24,15 @@
     [super drawRect:dirtyRect];
     
     if (_selected) {
-        [[NSColor colorWithCalibratedRed:0.5 green:0.5 blue:0.5 alpha:0.5] set];
+        [[NSColor grayColor] set];
         NSRectFill(self.bounds);
     }
 }
 
 -(void)setSelected:(BOOL)selected
 {
+    if (_selected == selected)
+        return;
     _selected = selected;
     [self setNeedsDisplay:YES];
 }

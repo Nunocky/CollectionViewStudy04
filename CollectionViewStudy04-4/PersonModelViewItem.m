@@ -22,4 +22,9 @@
     return self;
 }
 
+-(void)setSelected:(BOOL)selected
+{
+    [super setSelected:selected];
+    [self.view performSelector:@selector(setSelected:) withObject:@(selected)];
+}
 @end

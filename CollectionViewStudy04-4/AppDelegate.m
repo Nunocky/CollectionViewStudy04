@@ -15,6 +15,7 @@
     NSArrayController *_arrayController;
 }
 
+@property (nonatomic) NSIndexSet *selectionIndexes;
 @end
 
 @implementation AppDelegate
@@ -32,11 +33,17 @@
                  toObject:_arrayController
               withKeyPath:@"arrangedObjects"
                   options:nil];
-    
-//    [_collectionView bind:@"selectionIndexes"
-//                 toObject:_arrayController
-//              withKeyPath:@"selectionIndexes"
-//                  options:nil];
+
+    [_collectionView bind:@"selectionIndexes"
+                 toObject:_arrayController
+              withKeyPath:@"selectionIndexes"
+                  options:nil];
+
+    // collectionViewの選択状態を AppDelegateでも受ける
+    [self bind:@"selectionIndexes"
+      toObject:_arrayController
+   withKeyPath:@"selectionIndexes"
+       options:nil];
     
     _collectionView.itemPrototype = [[PersonModelViewItem alloc] init];
     
@@ -66,6 +73,7 @@
     }
     
     [self setPersonArray:tmpArray];
+
 }
 
 -(void)insertObject:(PersonModel *)object inPersonArrayAtIndex:(NSUInteger)index
@@ -81,6 +89,30 @@
 -(void)setPersonArray:(NSMutableArray *)personArray
 {
     _personArray = personArray;
+}
+
+#pragma mark Selection
+-(void)setSelectionIndexes:(NSIndexSet *)selectionIndexes
+{
+    if (_selectionIndexes == selectionIndexes)
+        return;
+    
+    _selectionIndexes = selectionIndexes;
+    
+    if (selectionIndexes.count == 0) {
+        NSLog(@"no items selected");
+        return;
+    }
+    
+    NSUInteger idx = [selectionIndexes firstIndex];
+    NSMutableString *str = [NSMutableString string];
+    
+    while (idx != NSNotFound) {
+        [str appendFormat:@" %ld", idx];
+        idx = [selectionIndexes indexGreaterThanIndex:idx];
+    }
+    
+    NSLog(@"%@", str);
 }
 
 
