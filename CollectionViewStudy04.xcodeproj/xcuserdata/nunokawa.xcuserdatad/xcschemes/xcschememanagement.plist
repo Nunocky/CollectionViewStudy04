@@ -14,6 +14,11 @@
 			<key>orderHint</key>
 			<integer>2</integer>
 		</dict>
+		<key>CollectionViewStudy04-4.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>3</integer>
+		</dict>
 		<key>CollectionViewStudy04.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -48,6 +53,16 @@
 			<true/>
 		</dict>
 		<key>9950A8C71911D3F200770E0F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>9950A8EA1912116A00770E0F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>9950A9041912116A00770E0F</key>
 		<dict>
 			<key>primary</key>
 			<true/>

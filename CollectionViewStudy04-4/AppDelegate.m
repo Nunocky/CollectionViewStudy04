@@ -1,6 +1,6 @@
 //
 //  AppDelegate.m
-//  CollectionViewStudy04-3
+//  CollectionViewStudy04-4
 //
 //  Created by 布川祐人 on 2014/05/01.
 //  Copyright (c) 2014年 NUNOKAWA Masato. All rights reserved.
@@ -33,10 +33,10 @@
               withKeyPath:@"arrangedObjects"
                   options:nil];
     
-    [_collectionView bind:@"selectionIndexes"
-                 toObject:_arrayController
-              withKeyPath:@"selectionIndexes"
-                  options:nil];
+//    [_collectionView bind:@"selectionIndexes"
+//                 toObject:_arrayController
+//              withKeyPath:@"selectionIndexes"
+//                  options:nil];
     
     _collectionView.itemPrototype = [[PersonModelViewItem alloc] init];
     
@@ -82,5 +82,6 @@
 {
     _personArray = personArray;
 }
+
 
 @end

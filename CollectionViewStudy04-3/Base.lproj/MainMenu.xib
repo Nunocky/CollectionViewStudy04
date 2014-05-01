@@ -683,7 +683,7 @@
                             <rect key="frame" x="1" y="1" width="480" height="360"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             <subviews>
-                                <collectionView id="Gd4-UP-sAC">
+                                <collectionView selectable="YES" allowsMultipleSelection="YES" id="Gd4-UP-sAC">
                                     <rect key="frame" x="0.0" y="0.0" width="480" height="360"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <color key="primaryBackgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
