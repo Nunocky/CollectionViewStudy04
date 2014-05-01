@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>CollectionViewStudy04-2.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 		<key>CollectionViewStudy04.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -18,6 +23,16 @@
 			<true/>
 		</dict>
 		<key>9950A85C1911CE7300770E0F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>9950A8791911D16D00770E0F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>9950A8931911D16D00770E0F</key>
 		<dict>
 			<key>primary</key>
 			<true/>
